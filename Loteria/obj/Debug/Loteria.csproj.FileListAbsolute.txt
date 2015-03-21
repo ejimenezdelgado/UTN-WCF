@@ -1,0 +1,12 @@
+D:\Universidad\UTN\2015\I Cuatrimestre\2015_1_cuatrimestre_progra3\Clases\Clase 17\Loteria\Loteria\bin\Loteria.dll.config
+D:\Universidad\UTN\2015\I Cuatrimestre\2015_1_cuatrimestre_progra3\Clases\Clase 17\Loteria\Loteria\bin\Loteria.dll
+D:\Universidad\UTN\2015\I Cuatrimestre\2015_1_cuatrimestre_progra3\Clases\Clase 17\Loteria\Loteria\bin\Loteria.pdb
+D:\Universidad\UTN\2015\I Cuatrimestre\2015_1_cuatrimestre_progra3\Clases\Clase 17\Loteria\Loteria\obj\Debug\Loteria.csprojResolveAssemblyReference.cache
+D:\Universidad\UTN\2015\I Cuatrimestre\2015_1_cuatrimestre_progra3\Clases\Clase 17\Loteria\Loteria\obj\Debug\Loteria.dll
+D:\Universidad\UTN\2015\I Cuatrimestre\2015_1_cuatrimestre_progra3\Clases\Clase 17\Loteria\Loteria\obj\Debug\Loteria.pdb
+D:\Proyectos\Universidad\TestWCF-UTN\Loteria\bin\Loteria.dll.config
+D:\Proyectos\Universidad\TestWCF-UTN\Loteria\bin\Loteria.dll
+D:\Proyectos\Universidad\TestWCF-UTN\Loteria\bin\Loteria.pdb
+D:\Proyectos\Universidad\TestWCF-UTN\Loteria\obj\Debug\Loteria.csprojResolveAssemblyReference.cache
+D:\Proyectos\Universidad\TestWCF-UTN\Loteria\obj\Debug\Loteria.dll
+D:\Proyectos\Universidad\TestWCF-UTN\Loteria\obj\Debug\Loteria.pdb
