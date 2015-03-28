@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModeloLoteria.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="premio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="numero" Type="int" Nullable="false" />
+    <Property Name="monto" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="importancia" Type="int" Nullable="false" />
+    <Property Name="sorteo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sorteo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="titulo" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_premio_sorteo">
+    <End Role="sorteo" Type="Self.sorteo" Multiplicity="1" />
+    <End Role="premio" Type="Self.premio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sorteo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="premio">
+        <PropertyRef Name="sorteo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModeloLoteriaStoreContainer">
+    <EntitySet Name="premio" EntityType="Self.premio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sorteo" EntityType="Self.sorteo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_premio_sorteo" Association="Self.FK_premio_sorteo">
+      <End Role="sorteo" EntitySet="sorteo" />
+      <End Role="premio" EntitySet="premio" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

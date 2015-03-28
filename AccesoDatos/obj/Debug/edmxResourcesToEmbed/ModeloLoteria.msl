@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="ModeloLoteria" />
+  <Alias Key="Target" Value="ModeloLoteria.Store" />
+  <EntityContainerMapping CdmEntityContainer="ModeloLoteriaContainer" StorageEntityContainer="ModeloLoteriaStoreContainer">
+    <EntitySetMapping Name="premio">
+      <EntityTypeMapping TypeName="ModeloLoteria.premio">
+        <MappingFragment StoreEntitySet="premio">
+          <ScalarProperty Name="sorteo" ColumnName="sorteo" />
+          <ScalarProperty Name="importancia" ColumnName="importancia" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sorteo">
+      <EntityTypeMapping TypeName="ModeloLoteria.sorteo">
+        <MappingFragment StoreEntitySet="sorteo">
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="ModeloLoteria.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,9 @@
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\bin\Debug\LoteriaNacionalCR.exe.config
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\bin\Debug\LoteriaNacionalCR.exe
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\bin\Debug\LoteriaNacionalCR.pdb
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\obj\Debug\LoteriaNacionalCR.csprojResolveAssemblyReference.cache
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\obj\Debug\LoteriaNacionalCR.Form1.resources
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\obj\Debug\LoteriaNacionalCR.Properties.Resources.resources
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\obj\Debug\LoteriaNacionalCR.csproj.GenerateResource.Cache
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\obj\Debug\LoteriaNacionalCR.exe
+D:\Proyectos\Universidad\UTN-WCF\LoteriaNacionalCR\obj\Debug\LoteriaNacionalCR.pdb

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModeloLoteria" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ModeloLoteriaContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="premio" EntityType="ModeloLoteria.premio" />
+    <EntitySet Name="sorteo" EntityType="ModeloLoteria.sorteo" />
+    <AssociationSet Name="FK_premio_sorteo" Association="ModeloLoteria.FK_premio_sorteo">
+      <End Role="sorteo" EntitySet="sorteo" />
+      <End Role="premio" EntitySet="premio" />
+    </AssociationSet>
+    <EntitySet Name="usuario" EntityType="ModeloLoteria.usuario" />
+  </EntityContainer>
+  <EntityType Name="premio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numero" Type="Int32" Nullable="false" />
+    <Property Name="monto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="importancia" Type="Int32" Nullable="false" />
+    <Property Name="sorteo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="sorteo1" Relationship="ModeloLoteria.FK_premio_sorteo" FromRole="premio" ToRole="sorteo" />
+  </EntityType>
+  <EntityType Name="sorteo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="titulo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="premio" Relationship="ModeloLoteria.FK_premio_sorteo" FromRole="sorteo" ToRole="premio" />
+  </EntityType>
+  <Association Name="FK_premio_sorteo">
+    <End Type="ModeloLoteria.sorteo" Role="sorteo" Multiplicity="1" />
+    <End Type="ModeloLoteria.premio" Role="premio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sorteo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="premio">
+        <PropertyRef Name="sorteo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

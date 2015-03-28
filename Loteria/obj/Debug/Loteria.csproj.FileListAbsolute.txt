@@ -10,3 +10,15 @@ D:\Proyectos\Universidad\TestWCF-UTN\Loteria\bin\Loteria.pdb
 D:\Proyectos\Universidad\TestWCF-UTN\Loteria\obj\Debug\Loteria.csprojResolveAssemblyReference.cache
 D:\Proyectos\Universidad\TestWCF-UTN\Loteria\obj\Debug\Loteria.dll
 D:\Proyectos\Universidad\TestWCF-UTN\Loteria\obj\Debug\Loteria.pdb
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\Loteria.dll.config
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\Loteria.dll
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\Loteria.pdb
+D:\Proyectos\Universidad\UTN-WCF\Loteria\obj\Debug\Loteria.csprojResolveAssemblyReference.cache
+D:\Proyectos\Universidad\UTN-WCF\Loteria\obj\Debug\Loteria.dll
+D:\Proyectos\Universidad\UTN-WCF\Loteria\obj\Debug\Loteria.pdb
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\AccesoDatos.dll
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\EntityFramework.dll
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\AccesoDatos.pdb
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\EntityFramework.xml
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\EntityFramework.SqlServer.dll
+D:\Proyectos\Universidad\UTN-WCF\Loteria\bin\EntityFramework.SqlServer.xml
